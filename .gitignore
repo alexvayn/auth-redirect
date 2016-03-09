@@ -1,0 +1,9 @@
+.*
+!test/env.conf
+!.gitignore
+node_modules/
+bower_components
+/access.log
+/project/
+/target/
+coverage/
