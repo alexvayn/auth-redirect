@@ -1,5 +1,5 @@
 {
-  "name": "mean-auth",
+  "name": "sample-auth-redirect",
   "scripts": {
     "start": "nodemon server/server.js"
   },
