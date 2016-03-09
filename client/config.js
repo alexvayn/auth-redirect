@@ -1,4 +1,5 @@
 angular.module('myApp')
     .constant("config", {
-        "idiomBaseUrl": "http://localhost:3001"
+        "unauthenticatedBaseUrl": "http://localhost:3001",
+        "authCheckUrl": "http://localhost:3001/identity/internal/v1/heartbeat"
     });

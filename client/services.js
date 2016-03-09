@@ -17,7 +17,7 @@ angular.module('myApp').factory('AuthService',
                 } else {
                     $http({
                         method: 'GET',
-                        url: config.idiomBaseUrl + '/identity/internal/v1/heartbeat',
+                        url: config.authCheckUrl,
                         headers: {
                             'Authorization': 'Bearer ' + jwtToken
                         }

@@ -25,7 +25,7 @@ myApp.config(function ($routeProvider) {
 
 myApp.run(function ($rootScope, $route, AuthService, config) {
 
-    var idiomLoginUrl = config.idiomBaseUrl + '/#/login';
+    var loginUrl = config.unauthenticatedBaseUrl + '/#/login';
 
     $rootScope.$on('$routeChangeStart', function (event, next, current) {
         if (next && next.access && next.access.restricted) {
@@ -34,13 +34,13 @@ myApp.run(function ($rootScope, $route, AuthService, config) {
                 .then(function (status) {
                     if (!status) {
                         console.log('got false status... need to log in');
-                        window.location.href = idiomLoginUrl;
+                        window.location.href = loginUrl;
                     } else {
                         console.log('user is logged in...');
                     }
                 })
                 .catch(function (status) {
-                    window.location.href = idiomLoginUrl;
+                    window.location.href = loginUrl;
                 });
         }
     });
