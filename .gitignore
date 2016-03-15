@@ -1,4 +1,5 @@
 .*
+/dist/
 !test/env.conf
 !.gitignore
 node_modules/

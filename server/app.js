@@ -16,6 +16,11 @@ app.use(require('express-session')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/ping', function (req, res) {
+    'use strict';
+    res.json('pong');
+});
+
 app.use('/user/', routes);
 
 app.get('/', function(req, res) {
