@@ -1,6 +1,5 @@
 var express = require('express'),
-    router = express.Router(),
-    User = require('../models/user.js');
+    router = express.Router();
 
 router.get('/logout', function(req, res) {
   req.logout();
