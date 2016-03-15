@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var app = require('./app');
 
 app.set('port', process.env.PORT || 8080);
