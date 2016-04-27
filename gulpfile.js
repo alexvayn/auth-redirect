@@ -17,7 +17,6 @@ gulp.task('clean-coverage', function() {
     return del(['coverage']);
 });
 
-
 gulp.task('clean', function() {
     'use strict';
     return del(['dist']);
