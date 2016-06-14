@@ -11,7 +11,7 @@ angular.module('myApp').factory('AuthService',
                 console.log('got Jwt token... ' + jwtToken);
 
                 if (!jwtToken) {
-                    console.log('Missing JWT token, not gonna bother calling Idiom')
+                    console.log('Missing JWT token, not gonna bother calling Identity Service')
                     deferred.reject(false);
                     user = false;
                 } else {
